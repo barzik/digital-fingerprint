@@ -54,5 +54,6 @@ replaceClientOnDisconnect(connection);
  * @return {Connection}
  */
 exports.getClient = () => {
+  connection.query('CREATE TABLE IF NOT EXISTS users (name VARCHAR(255), hash VARCHAR(255) PRIMARY KEY UNIQUE)');
   return connection;
 };
