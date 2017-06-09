@@ -17,13 +17,15 @@
     "mocha": "^3.4.2",
     "proxyquire": "^1.8.0",
     "sinon": "^2.3.2",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "fingerprintjs2": "^1.5.1",
     "mysql": "^2.13.0"
   }
 }

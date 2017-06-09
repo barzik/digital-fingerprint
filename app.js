@@ -10,9 +10,10 @@ const api = require('./api');
 app.set('view engine', 'ejs');
 app.listen(port);
 
+app.use(express.static('static-resources'));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-app.use(express.static('static-resources'));
+
 
 app.use('/api', api);
 app.get('/', (req, res) => {
