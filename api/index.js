@@ -6,10 +6,10 @@ const mysql = require('mysql');
 
 function createConnection() {
   const connection = mysql.createConnection({
-    host: process.env.DB_HOST || 'eu-cdbr-west-01.cleardb.com',
-    user: process.env.DB_USER || 'ba264dc9421e63AAA',
-    password: process.env.DB_PASS || '220e81f9',
-    database: process.env.db_NAME || 'heroku_d7f423520d8268c'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.db_NAME
   });
   return connection;
 }
