@@ -10,5 +10,7 @@
 	"intro2": "Let me show you, just type your name here and click submit. After that, I will remember you! - Try to open this page in incognito mode, clear cache &amp; cookies and open it again. Try to switch IP, - Use proxy or even VPN. Nothing will hide you! You will see your name over and over again.",
   "Insert Your name": "Insert Your name",
   "Submit": "Submit",
-  "Your name": "Your name"
+  "Your name": "Your name",
+  "ltr": "ltr",
+  "lang": "he"
 }
