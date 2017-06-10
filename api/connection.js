@@ -1,6 +1,6 @@
 let mysql = require('mysql');
 
-let connection = mysql.createConnection({
+let connection = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,

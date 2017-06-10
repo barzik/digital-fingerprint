@@ -10,7 +10,7 @@ class FingerPrintInit {
   }
 
   testIfHashIsThere(hash) {
-    if (!hash) { // test to see if user get hash. if not, print error.
+    if (!hash) {
       this.error = new Error('Fingerprint2 could not fetch hash.');
       throw this.error;
     } else {
@@ -32,6 +32,7 @@ class FingerPrintInit {
         }
       })
       .then((name) => {
+        document.getElementById('calculating').style = 'display: none;';
         document.getElementById('form-container').style = 'display: none;';
         document.getElementById('name-container').style = 'display: block;';
         document.getElementById('name-display').innerHTML = name;
@@ -40,10 +41,13 @@ class FingerPrintInit {
   }
 
   nameIsNotThere(hash) {
+    document.getElementById('calculating').style = 'display: none;';
+    document.getElementById('form-container').style = 'display: block;';
     document.getElementById('hash').value = hash;
   }
 
   saveHash() {
+    document.getElementById('calculating').style = 'display: block;';
     let requestURL = '/api/';
     fetch(requestURL, {
       headers: {
@@ -54,9 +58,10 @@ class FingerPrintInit {
       body: JSON.stringify({ hash: document.getElementById('hash').value, name: document.getElementById('name').value })
     })
       .then(() => {
+        document.getElementById('calculating').style = 'display: none;';
+        document.getElementById('tryit-container').style = 'display: block;';
         document.getElementById('form-container').style = 'display: none;';
-        document.getElementById('name-container').style = 'display: block;';
-        document.getElementById('name-display').innerHTML = 'Try to refresh or open in another browser';
+        document.getElementById('name-container').style = 'display: none;';
       });
   }
 }

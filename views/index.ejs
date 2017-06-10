@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>SAAS blocker API</title>
+  <title>Digital fingerprint</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,24 +19,52 @@
     <div class="jumbotron">
       <h1 class="display-3">Digital Fingerprint test</h1>
       <p class="lead">
+        What if I told you that you can be tracked without IP, without cookies, just by the data on your browser?
       </p>
-      <p><a class="btn btn-lg btn-success" href="https://github.com/barzik/blockersaas" target="_blank" role="button">הורידו את הפרויקט בגיטהאב</a></p>
+      <p><a class="btn btn-lg btn-success" href="https://github.com/barzik/blockersaas" target="_blank" role="button">Github page</a></p>
     </div>
-    <div class="row marketing" id="name-container" style="display: none;">
+    <div class="row marketing">
       <div class="col-lg-12">
-        <p id="name-display"></p>
+        <br />A lot of people think that just by clearing cache or by moving to 'incognito mode' or even by swtiching IP,
+        they can avoid detection.
+        <br />But you can be tracked, Facebook will KNOW if you open another fake account to trash your friends. Google will
+        KNOW if you try to create another Gmail account.
       </div>
     </div>
 
-    <div class="row marketing" id="form-container">
+    <div class="row marketing" id="calculating">
+      <div class="col-lg-12" id="gear">
+        <p class="text-center">Calculating... please hold on.</p>
+        <p class="text-center"><img src="/images/cog-wheel.png" alt="rotating gear" /></p>
+      </div>
+    </div>
+    <div class="row marketing" id="name-container" style="display: none;">
       <div class="col-lg-12">
-          <form class="form-signin">
-            <label for="name">Insert Your name</label>
-            <input class="form-control" type="text" id="name" required="required" placeholder="Your name" />
-            <input type="hidden" id="hash" />
-            <button id="initHashInsertion" class="btn btn-lg btn-primary btn-block" type="button" >test</button>
-            <div id="result"></div>
-          </form>
+        <p class="text-center">I FOUND YOU! Your name is <strong id="name-display"></strong>, shame shame shame!</p>
+        <p class="text-center"><img src="/images/Evil-Monkey.png" alt="Evil, pointing monkey" /></p>
+      </div>
+    </div>
+    <div class="row marketing" id="tryit-container" style="display: none;">
+      <div class="col-lg-12">
+        <p>OK, your name was recorded. Now open this browser in incognito mode!</p>
+        <p class="text-center"><img src="/images/try.gif" alt="Yoda, try" /></p>
+      </div>
+    </div>
+
+    <div class="row" id="form-container" style="display: none">
+        <div class="col-lg-12">
+        <br />Let me show you, just type your name here and click sumbit. After that, I will remember you!
+        <br />Try to open this page in incognito mode, clear cache &amp; cookies and open it again. Try to switch IP,
+        Use proxy or even VPN. Nothing will hide you! You will see your name over and over again.
+      </div>
+      <div class="col-lg-3 offset-lg-4">
+        <form class="form-signin">
+          <label for="name">Insert Your name</label>
+          <input class="form-control" type="text" id="name" required="required" placeholder="Your name" />
+          <input type="hidden" id="hash" />
+          <button id="initHashInsertion" class="btn btn-lg btn-primary btn-block" type="button">submit</button>
+          <div id="result"></div>
+        </form>
       </div>
     </div>
 
@@ -45,4 +73,5 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>
 <script src="/js/fingerprint-serve.js"></script>
+
 </html>
