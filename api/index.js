@@ -25,7 +25,6 @@ router.post('/', (req, res) => {
   let post = { hash: hash, name: name };
   connectionInstance.query('INSERT IGNORE INTO users SET ?', post, (error) => {
     if (error) {
-      console.log(error);
       res.sendStatus(500);
     } else {
       res.sendStatus(200);

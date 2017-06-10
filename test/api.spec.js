@@ -4,6 +4,8 @@ const sinon = require('sinon');
 const connection = require('../api/connection');
 const chai = require('chai');
 const expect = chai.expect;
+'use strict';
+
 let mockCreateConnectionMethod;
 let mockQueryMethod;
 let mockConnection = {
