@@ -1,0 +1,15 @@
+{
+	"Hello i18n": "Hello i18n",
+	"Digital Fingerprint test": "Digital Fingerprint test",
+	"What if I told you": "What if I told you that you can be tracked without IP, without cookies, just by the data on your browser?",
+	"Github page": "Github page",
+	"intro1": "A lot of people think that just by clearing cache or by moving to 'incognito mode' or even by switching IP, - they can avoid detection. - But you can be tracked, Facebook will KNOW if you open another fake account to trash your friends. Google will - KNOW if you try to create another Gmail account.",
+	"Calculating... please hold on.": "Calculating... please hold on.",
+	"I FOUND YOU! Your name is": "I FOUND YOU! Your name is",
+	"shame shame shame!": "shame shame shame!",
+	"OK, your name was recorded. Now open this browser in incognito mode!": "OK, your name was recorded. Now open this browser in incognito mode!",
+	"intro2": "Let me show you, just type your name here and click submit. After that, I will remember you! - Try to open this page in incognito mode, clear cache &amp; cookies and open it again. Try to switch IP, - Use proxy or even VPN. Nothing will hide you! You will see your name over and over again.",
+  "Insert Your name": "Insert Your name",
+  "Submit": "Submit",
+  "Your name": "Your name"
+}
