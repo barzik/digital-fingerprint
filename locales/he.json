@@ -1,16 +1,14 @@
 {
 	"Digital Fingerprint test": "טביעת אצבעות דיגיטלית",
-	"What if I told you that you can be tracked without IP, without cookies, just by the data on your browser?": "What if I told you that you can be tracked without IP, without cookies, just by the data on your browser?",
-	"Github page": "Github page",
-	"What if I told you": "What if I told you",
-	"intro 1": "intro 1",
-	"Calculating... please hold on.": "Calculating... please hold on.",
-	"I FOUND YOU! Your name is": "I FOUND YOU! Your name is",
-	"shame shame shame!": "shame shame shame!",
-	"OK, your name was recorded. Now open this browser in incognito mode!": "OK, your name was recorded. Now open this browser in incognito mode!",
-	"intro1": "intro1",
-	"intro2": "intro2",
-	"Insert Your name": "Insert Your name",
+	"What if I told you": "מה אם הייתי אומר לכם שאני יכול לעקוב אחרי כל אחדף בליIP, בלי עוגיות - רק באמצעות המידע של הדפדפן?",
+	"Github page": "תנו לי בגיטהאב",
+	"intro1": "הרבה אנשים חושבים שעל ידי מעבר לאינקוגניטו מוד, או ניקוי הזכרון של הדפדפן, או מעבר ל-IP אחר, הם יכולים להתחמק מזיהוי ומגילוי. אבל אפשר לזהות אותך כל הזמן. פייסבוק ידעו אם אתה פותח חשבון אחר, גם אם אתה עושה את זה מאינקוגניטו או מאיי פי אחר. גוגל ידעו אם אתה פותח עוד ג'ימייל",
+	"Calculating... please hold on.": "בעבודה... נא להמתין",
+	"I FOUND YOU! Your name is": "מצאתי אותך! השם שלך הוא",
+	"shame shame shame!": "חשבת להתחמק, הא?",
+	"OK, your name was recorded. Now open this browser in incognito mode!": "יש לי את השם שלך, עכשיו פתח את הדפדפן הזה במוד אינקוגניטו. אם אתה בכרום אז זה קונטרול, שיפט ו-N.",
+	"intro2": "בוא ואראה לך איך זה עובד. הכנס את השם שלך באנגלית ולחץ על 'שיגור'. אחרי שהשם ונתוני הדפדפן שלך יירשמו, תוכל לפתוח את האתר הזה במוד אינקוגניטו, לאחר ניקוי קאש ועוגיות ואפילו מאחורי VPN ואני אנסה לזהות אותך.",
+	"Insert Your name": "הכנס את השם",
 	"Your name": "Your name",
-	"Submit": "Submit"
+	"Submit": "שיגור"
 }
