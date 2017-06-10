@@ -31,7 +31,7 @@ describe('API test', () => {
       .expect(200)
       .end((err, res) => {
         expect(res.text).to.equal('moshe');
-        expect(mockQueryMethod.calledTwice).to.equal(true);
+        expect(mockQueryMethod.calledOnce).to.equal(true);
         done();
       });
   });
@@ -42,7 +42,7 @@ describe('API test', () => {
       .send({ hash: 'TestHash', name: 'Test Name' })
       .expect(200)
       .end(() => {
-        expect(mockQueryMethod.calledTwice).to.equal(true);
+        expect(mockQueryMethod.calledOnce).to.equal(true);
         expect(mockQueryMethod.calledWith(
           sinon.match.any,
           { hash: 'TestHash', name: 'Test Name' },
